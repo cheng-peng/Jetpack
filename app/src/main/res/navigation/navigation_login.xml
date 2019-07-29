@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/welcome">
+
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.cxp.jetpack.ui.fragment.login.WelcomeFragment"
+        android:label="WelcomeFragment">
+        <action
+            android:id="@+id/action_welcome_to_loginFragment"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_welcome_to_registerFragment"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.cxp.jetpack.ui.fragment.login.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/register"
+        android:name="com.cxp.jetpack.ui.fragment.login.RegisterFragment"
+        android:label="RegisterFragment" >
+
+        <argument
+            android:name="EMAIL"
+            android:defaultValue="2005@qq.com"
+            app:argType="string"/>
+    </fragment>
+</navigation>
