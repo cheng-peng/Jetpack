@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--id 要和navigation里面定义的id一致，否则点击事件无效-->
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/main_ic_home"
+        android:title="主页"/>
+
+    <item
+        android:id="@+id/favourite"
+        android:icon="@drawable/main_ic_favorite"
+        android:title="喜欢"/>
+
+    <item
+        android:id="@+id/me"
+        android:icon="@drawable/main_ic_me"
+        android:title="我"/>
+</menu>
